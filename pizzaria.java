@@ -8,7 +8,7 @@ public class pizzaria {
 
         do {
             System.out.println("Digite a opção: ");
-            System.out.println("0 - Sair");
+            System.out.println("0 - Inicio");
             System.out.println("1 - Cadastro Cliente");
             System.out.println("2 - Lista Cliente");
             System.out.println("3 - Cadastro Sabor");
@@ -17,10 +17,11 @@ public class pizzaria {
             System.out.println("6 - Lista Pizza");
             System.out.println("7 - Cadastro Comanda");
             System.out.println("8 - Lista Comanda");
+            System.out.println("9 - FIm");
             menu = scanner.nextInt();
             switch (menu) {
                 case 0:
-                    System.out.println("Obrigado pela preferência!!");
+                    System.out.println("Bem vindo!!");
                     break;
 //==============================================================================================================                    
                 case 1:
@@ -50,7 +51,6 @@ public class pizzaria {
                 }
                 break;
 //==============================================================================================================
-
                 case  2:
                         System.out.println("Lista Cliente: \n");
                     for (CadastroCliente cadastrocliente : cadastroCliente.cadastrocliente) {
@@ -156,10 +156,12 @@ public class pizzaria {
                         );
                 }
                 break; 
-
+//==============================================================================================================
+                case 9:
+                        System.out.println("Obrigado pela preferência!!");
+                break;
+//==============================================================================================================                    
                 } while (menu != 0);
- 
-
         } 
     }
 
